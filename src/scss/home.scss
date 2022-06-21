@@ -1,0 +1,96 @@
+$Gothic : 'Gothic A1',sans-serif;
+@mixin text($fw,$fs,$lh,$c){
+    font-family: $Gothic;
+    font-style: normal;
+    line-height: $lh;
+    color: $c;
+    font-weight: $fw;
+    font-size: $fs;
+}
+
+@mixin animation() {
+    @keyframes slidein {
+        0% {
+            opacity: 0;
+            transform: translateY(10%);
+        }
+              
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }   
+    }
+}
+
+@include animation();
+
+.home__text{
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-name: slidein;
+    position: absolute;
+    opacity: 1;
+
+}
+
+.home{
+    height: 100vh;
+    padding: 0 10%;
+    background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+
+    &__box{
+        padding-top: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__title{
+        padding-top: 178px;
+        @include text(400,80px,80px,#FFFFFF);
+    }
+
+    &__subtitle{
+        padding: 10px 0 25px;
+        @include text(400,30px,44px,#FFFFFF);
+    }
+
+    &__btn{
+        height: 66px;
+        width: 170px;
+        background: #FC0A7E;
+        border-radius: 3px;
+        border: 0;
+        @include text(400,16px,26px,#FFFFFF);
+        cursor: pointer;
+        &:hover{
+            background-color: #FFFFFF;
+            color: grey;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        max-width: 652px;
+        width: 100%;
+        top: 120px;
+        right: 44px;
+        animation-name: slidein;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        position: absolute;
+        opacity: 1;
+    }
+
+    &__arrow{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 30px;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+}

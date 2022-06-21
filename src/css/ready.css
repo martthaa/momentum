@@ -1,0 +1,58 @@
+.ready {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  background-image: url(https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b11c1af7f519f50eaefd140_wavy-bg.svg), linear-gradient(135deg, #fc0a7e, #602bb6);
+  background-position: 50% 50%, 0px 0px;
+  background-size: cover, auto;
+}
+.ready__box {
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+  height: 234px;
+  width: 395px;
+  text-align: center;
+}
+.ready__title {
+  font-family: "Gothic A1", sans-serif;
+  font-style: normal;
+  line-height: 48px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 38px;
+  padding-bottom: 40px;
+}
+.ready .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.ready__btn {
+  font-family: "Gothic A1", sans-serif;
+  font-style: normal;
+  line-height: 26px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  height: 66px;
+  width: 190px;
+  border-radius: 3px;
+  border: none;
+}
+.ready__btn:nth-child(1) {
+  background: #FC0A7E;
+}
+.ready__btn:nth-child(1):hover {
+  background-color: #FFFFFF;
+  color: grey;
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+.ready__btn:nth-child(2) {
+  background: transparent;
+  -webkit-box-shadow: inset 0 0 0 2px hsla(0deg, 0%, 100%, 0.2);
+          box-shadow: inset 0 0 0 2px hsla(0deg, 0%, 100%, 0.2);
+}
+.ready__btn:nth-child(2):hover {
+  border: 2px solid white;
+}

@@ -1,0 +1,36 @@
+$Gothic : 'Gothic A1',sans-serif;
+@mixin text($fw,$fs,$lh,$c){
+    font-family: $Gothic;
+    font-style: normal;
+    line-height: $lh;
+    color: $c;
+    font-weight: $fw;
+    font-size: $fs;
+}
+
+
+
+.footer{
+    // padding: 20px 0 69px;
+    background: #1B1B1B;
+
+    &__box{
+        padding: 20px 0 69px 0;
+        height: 242.078125px;
+        width: 575px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    &__row{
+        padding-top: 29px;
+        display: flex;
+        justify-content: space-around;
+        // list-style-type: none;
+    }
+
+    &__item{
+        @include text(400,12px,20px,#6B6B6B);
+        text-decoration: none
+    }
+}

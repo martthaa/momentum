@@ -1,0 +1,24 @@
+@import '../libs/bootstrap/css/bootstrap-grid.min.css';
+
+@import '../fonts/Gothic/stylesheet.css';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 90vw;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+@import 'header';
+@import 'home';
+@import 'second';
+@import 'mainSection';
+@import 'ready';
+@import 'updates';
+@import 'footer';
+@import 'media';

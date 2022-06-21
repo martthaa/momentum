@@ -1,0 +1,58 @@
+$Gothic : 'Gothic A1',sans-serif;
+@mixin text($fw,$fs,$lh,$c){
+    font-family: $Gothic;
+    font-style: normal;
+    line-height: $lh;
+    color: $c;
+    font-weight: $fw;
+    font-size: $fs;
+}
+
+.header__link-style:hover{
+    color: #FC0A7E;
+    // transition: color 0.3s ease-in-out;
+}
+
+.header{
+    width: 100%;
+    position: absolute;
+    padding: 0 10%;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+    }
+    &__menu{
+        display: flex;
+        list-style-type: none;
+    }
+    &__link{
+        margin-right: 30px;
+        position: relative;
+        cursor: pointer;
+        &-style{
+            text-decoration: none;
+            @include text(400,16px,20px,#FFFFFF);
+
+        } 
+    }
+
+    &__hamburger{
+        display: none;
+        cursor: pointer;
+    }
+
+    &__bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        // -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+    
+    
+}
